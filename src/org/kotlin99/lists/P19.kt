@@ -4,10 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> rotate(n: Int, list: List<T>): List<T> =
-    if (n == 0) list
-    else if (n > 0) list.drop(n) + list.take(n)
-    else list.takeLast(-n) + list.dropLast(-n)
+fun <T> rotate(n: Int, list: List<T>): List<T> {
+    TODO("Write here the implementation")
+}
 
 class P19Test {
     @Test fun `rotate a list N places to the left`() {

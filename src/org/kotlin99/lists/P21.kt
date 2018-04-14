@@ -4,8 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> insertAt(value: T, n: Int, list: List<T>): List<T> =
-    list.take(n) + listOf(value) + list.drop(n)
+fun <T> insertAt(value: T, n: Int, list: List<T>): List<T> {
+    TODO("Write here the implementation")
+}
 
 class P21Test {
     @Test fun `insert an element at a given position into a list`() {

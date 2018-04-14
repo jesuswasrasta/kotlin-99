@@ -4,7 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun range(from: Int, to: Int): List<Int> = (from..to).toList()
+fun range(from: Int, to: Int): List<Int> {
+    TODO("Write here the implementation")
+}
 
 class P22Test {
     @Test fun `create a list containing all integers within a given range`() {

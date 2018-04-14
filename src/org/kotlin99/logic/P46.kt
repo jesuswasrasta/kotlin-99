@@ -6,19 +6,20 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-inline fun Boolean.not_() = !this
-inline fun Boolean.and_(other: Boolean) = this && other
-inline fun Boolean.or_(other: Boolean) = this || other
-inline fun Boolean.nand_(other: Boolean) = this.and_(other).not_()
-inline fun Boolean.nor_(other: Boolean) = this.or_(other).not_()
-inline fun Boolean.xor_(other: Boolean) = this.xor(other)
-inline fun Boolean.equ_(other: Boolean) = this.xor_(other).not_()
-inline fun Boolean.impl_(other: Boolean) = this.or_(other.not_())
+inline fun Boolean.not_(): Nothing = TODO("Write here the implementation")
+inline fun Boolean.and_(other: Boolean): Nothing = TODO("Write here the implementation")
+inline fun Boolean.or_(other: Boolean): Nothing = TODO("Write here the implementation")
+inline fun Boolean.nand_(other: Boolean): Nothing = TODO("Write here the implementation")
+inline fun Boolean.nor_(other: Boolean): Nothing = TODO("Write here the implementation")
+inline fun Boolean.xor_(other: Boolean): Nothing = TODO("Write here the implementation")
+inline fun Boolean.equ_(other: Boolean): Nothing = TODO("Write here the implementation")
+inline fun Boolean.impl_(other: Boolean): Nothing = TODO("Write here the implementation")
 
-fun truthTable(f: (Boolean, Boolean) -> Boolean): List<Row> =
-    listOf(Pair(true, true), Pair(true, false), Pair(false, true), Pair(false, false)).map {
+fun truthTable(f: (Boolean, Boolean) -> Boolean): List<Row> {
+    return listOf(Pair(true, true), Pair(true, false), Pair(false, true), Pair(false, false)).map {
         Row(it.first, it.second, f(it.first, it.second))
     }
+}
 
 fun printTruthTable(f: (Boolean, Boolean) -> Boolean) {
     println(listOf("a", "b", "result").joinToString("\t"))

@@ -4,12 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> pack(list: List<T>): List<List<T>> =
-    if (list.isEmpty()) emptyList()
-    else {
-        val packed = list.takeWhile { it == list.first() }
-        listOf(packed) + pack(list.drop(packed.size))
-    }
+fun <T> pack(list: List<T>): List<List<T>> {
+    TODO("Write here the implementation")
+}
 
 class P09Test {
     @Test fun `pack consecutive duplicates of list elements into sublists`() {

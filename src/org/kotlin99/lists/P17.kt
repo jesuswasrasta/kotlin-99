@@ -4,7 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> split(n: Int, list: List<T>) = Pair(list.take(n), list.drop(n))
+fun <T> split(n: Int, list: List<T>): Pair<List<T>, List<T>> {
+    TODO("Write here the implementation")
+}
 
 class P17Test {
     @Test fun `split a list into two parts`() {

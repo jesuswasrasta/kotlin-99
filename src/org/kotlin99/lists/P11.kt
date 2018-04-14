@@ -6,11 +6,9 @@ import org.junit.Test
 
 @Suppress("IMPLICIT_CAST_TO_ANY")
 // Note that T has upper bound of Any (not nullable value)
-fun <T: Any> encodeModifies(list: List<T>): List<Any> =
-    pack(list).map {
-        if (it.size == 1) it.first()
-        else Pair(it.size, it.first())
-    }
+fun <T: Any> encodeModifies(list: List<T>): List<Any> {
+    TODO("Write here the implementation")
+}
 
 class P11Test {
     @Test fun `modified run-length encoding`() {

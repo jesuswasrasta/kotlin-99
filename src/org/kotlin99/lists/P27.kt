@@ -7,21 +7,13 @@ import org.junit.Test
 import org.kotlin99.common.containsAll
 import org.kotlin99.common.tail
 
-fun <T> group3(list: List<T>): List<List<List<T>>> =
-    combinations(2, list).flatMap { listOfTwo ->
-        val filteredList = list.filterNot { listOfTwo.contains(it) }
-        combinations(3, filteredList).flatMap { listOfThree ->
-            val filteredList2 = filteredList.filterNot { listOfThree.contains(it) }
-            combinations(4, filteredList2).map { listOf(it, listOfThree, listOfTwo) }
-        }
-    }
+fun <T> group3(list: List<T>): List<List<List<T>>> {
+    TODO("Write here the implementation")
+}
 
-fun <T> group(sizes: List<Int>, list: List<T>): List<List<List<T>>> =
-    if (sizes.isEmpty()) listOf(emptyList())
-    else combinations(sizes.first(), list).flatMap { combination ->
-        val filteredList = list.filterNot { combination.contains(it) }
-        group(sizes.tail(), filteredList).map { it + listOf(combination) }
-    }
+fun <T> group(sizes: List<Int>, list: List<T>): List<List<List<T>>> {
+    TODO("Write here the implementation")
+}
 
 
 class P27Test {

@@ -4,15 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> encodeDirect(list: List<T>): List<Pair<Int, T>> =
-    list.fold(emptyList()) { result, value ->
-        if (result.isEmpty()) listOf(Pair(1, value))
-        else {
-            val last = result.last()
-            if (last.second == value) result.dropLast(1) + Pair(last.first + 1, value)
-            else result + Pair(1, value)
-        }
-    }
+fun <T> encodeDirect(list: List<T>): List<Pair<Int, T>> {
+    TODO("Write here the implementation")
+}
 
 class P13Test {
     @Test fun `run-length encoding of a list (direct solution)`() {

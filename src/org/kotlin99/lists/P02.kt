@@ -4,7 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> penultimate(list: List<T>) = list[list.lastIndex - 1]
+fun <T> penultimate(list: List<T>): T {
+    TODO("Write here the implementation")
+}
 
 class P02Test {
     @Test fun `find the last but one element of a list`() {

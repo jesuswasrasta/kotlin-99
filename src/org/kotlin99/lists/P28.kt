@@ -4,13 +4,13 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> lengthSort(listOfLists: List<List<T>>): List<List<T>> = listOfLists.sortedBy { it.size }
-
-fun <T> lengthFreqSort(listOfLists: List<List<T>>): List<List<T>> {
-    val groupedLists = listOfLists.groupBy { it.size }
-    return listOfLists.sortedBy { groupedLists[it.size]!!.size }
+fun <T> lengthSort(listOfLists: List<List<T>>): List<List<T>> {
+    TODO("Write here the implementation")
 }
 
+fun <T> lengthFreqSort(listOfLists: List<List<T>>): List<List<T>> {
+    TODO("Write here the implementation")
+}
 
 class P28Test {
     @Test fun `a) sort elements of the list according to their length`() {

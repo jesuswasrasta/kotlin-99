@@ -5,8 +5,9 @@ import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 import java.util.*
 
-fun <T> duplicateN(n: Int, list: List<T>): List<T> =
-    list.flatMap { Collections.nCopies(n, it) }
+fun <T> duplicateN(n: Int, list: List<T>): List<T> {
+    TODO("Write here the implementation")
+}
 
 class P15Test {
     @Test fun `duplicate the elements of a list a given number of times`() {

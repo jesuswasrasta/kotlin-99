@@ -6,14 +6,17 @@ import org.junit.Test
 
 // Functions below cannot be "inline" because there are recursive.
 
-fun Boolean.and_(vararg others: Boolean): Boolean =
-    if (others.isEmpty()) this else this.and_(others.first()).and_(*others.tail())
+fun Boolean.and_(vararg others: Boolean): Boolean {
+    TODO("Write here the implementation")
+}
 
-fun Boolean.or_(vararg others: Boolean): Boolean =
-    if (others.isEmpty()) this else this.or_(others.first()).or_(*others.tail())
+fun Boolean.or_(vararg others: Boolean): Boolean {
+    TODO("Write here the implementation")
+}
 
-fun Boolean.xor_(vararg others: Boolean): Boolean =
-    if (others.isEmpty()) this else this.xor_(others.first()).xor_(*others.tail())
+fun Boolean.xor_(vararg others: Boolean): Boolean {
+    TODO("Write here the implementation")
+}
 
 private fun BooleanArray.tail() = drop(1).toBooleanArray()
 

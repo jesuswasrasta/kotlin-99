@@ -4,8 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> encode(list: List<T>): List<Pair<Int, T>> =
-    pack(list).map { Pair(it.size, it.first()) }
+fun <T> encode(list: List<T>): List<Pair<Int, T>> {
+    TODO("Write here the implementation")
+}
 
 class P10Test {
     @Test fun `run-length encoding of a list`() {

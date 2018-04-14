@@ -5,8 +5,9 @@ import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 import java.util.*
 
-fun <T> randomPermute(list: List<T>, random: Random = Random()): List<T> =
-    randomSelect(list.size, list, random)
+fun <T> randomPermute(list: List<T>, random: Random = Random()): List<T> {
+    TODO("Write here the implementation")
+}
 
 class P25Test {
     @Test fun `generate a random permutation of the elements of a list`() {

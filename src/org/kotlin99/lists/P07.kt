@@ -5,10 +5,9 @@ import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
 @Suppress("UNCHECKED_CAST")
-fun flatten(list: List<Any>): List<Any> =
-    list.flatMap {
-        if (it is List<*>) flatten(it as List<Any>) else listOf(it)
-    }
+fun flatten(list: List<Any>): List<Any> {
+    TODO("Write here the implementation")
+}
 
 class P07Test {
     @Test fun `flatten a nested list structure`() {

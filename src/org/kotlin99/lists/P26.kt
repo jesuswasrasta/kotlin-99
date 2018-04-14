@@ -6,11 +6,9 @@ import org.junit.Test
 import org.kotlin99.common.containsAll
 import org.kotlin99.common.tail
 
-fun <T> combinations(n: Int, list: List<T>): List<List<T>> =
-    if (n == 0) listOf(emptyList())
-    else list.flatMapTails { subList ->
-        combinations(n - 1, subList.tail()).map { (it + subList.first()) }
-    }
+fun <T> combinations(n: Int, list: List<T>): List<List<T>> {
+    TODO("Write here the implementation")
+}
 
 private fun <T> List<T>.flatMapTails(f: (List<T>) -> (List<List<T>>)): List<List<T>> =
     if (isEmpty()) emptyList()

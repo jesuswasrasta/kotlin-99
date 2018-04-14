@@ -5,9 +5,9 @@ import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 import org.kotlin99.common.tail
 
-fun <T> reverse(list: List<T>): List<T> =
-    if (list.size <= 1) list
-    else reverse(list.tail()) + list.first()
+fun <T> reverse(list: List<T>): List<T> {
+    TODO("Write here the implementation")
+}
 
 class P05Test {
     @Test fun `reverse a list`() {
