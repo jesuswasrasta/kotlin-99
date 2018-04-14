@@ -4,7 +4,9 @@ import com.natpryce.hamkrest.assertion.assertThat
 import com.natpryce.hamkrest.equalTo
 import org.junit.Test
 
-fun <T> last(list: List<T>): T = list[list.lastIndex]
+fun <T> last(list: List<T>): T {
+    TODO("Write here the implementation")
+}
 
 class P01Test {
     @Test fun `find the last element of a list`() {
